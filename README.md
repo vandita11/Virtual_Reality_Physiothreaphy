@@ -1,1 +1,1 @@
-# Virtual_Reality_Physiothreaphy
+# Virtual_Reality_Physiotherapy
