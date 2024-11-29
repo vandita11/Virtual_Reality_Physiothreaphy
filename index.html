@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2>Virtual Physiotherapy</h2>
+      <div class="toggle-btn-box">
+        <button id="login-btn" class="toggle-btn active" onclick="showLogin()">Login</button>
+        <button id="signup-btn" class="toggle-btn" onclick="showSignup()">Signup</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="input-group" action="">
+        <input type="email" id="email" class="input-field" placeholder="Email Address" required>
+        <input type="password" id="password" class="input-field" placeholder="Password" required>
+      <label>
+          <input type="checkbox" onclick="myFunction()">Show Password
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+ <!-- <button type="submit" class="submit-btn">Login</button> -->
+         <!-- <a href="./subfile/index1.html" style="font-size: medium;">login</a>  -->
+         <button type="submit" class="btn submit-btn  btn-lg shadow" onClick="auth(event)">Submit</button>
+      </form>
+
+      <!-- Signup Form -->
+      <form id="signup-form" class="input-group hidden">
+        <input type="email" id="email" class="input-field" placeholder="Email Address" required>
+        <input type="password"id="password" class="input-field" placeholder="Password" required>
+        <input type="password"id=password class="input-field" placeholder="Confirm Password" required>
+        <button type="submit" class="submit-btn">Signup</button>
+      </form>
+
+      <p class="toggle-link">Not a member? <a href="#" onclick="showSignup()">Signup now</a></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
